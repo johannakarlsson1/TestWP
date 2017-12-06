@@ -10,13 +10,13 @@ services:
       DB_NAME: wordpress
       DB_USER: root
       DB_PASSWORD: password
-      DB_HOST: db.example.com
+      DB_HOST: ${DB_HOST}
       DB_PREFIX: wp_
       WP_ENV: production
       WP_HOME: https://example.com
       WP_SITEURL: https://example.com/wp
-      CERTS: example.com,www.example.com
-      EMAIL: user@example.com
+      #CERTS: example.com,www.example.com
+      #EMAIL: user@example.com
       # Generate your keys here: https://roots.io/salts.html
       AUTH_KEY: generateme
       SECURE_AUTH_KEY: generateme
