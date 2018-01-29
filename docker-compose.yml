@@ -1,8 +1,7 @@
 version: '3'
 services:
   wordpress:
-    image: 729372495934.dkr.ecr.eu-west-1.amazonaws.com/wordpress/docker-base:0.0.7
-    restart: always
+    image: stena/wordpress-base:0.0.12
     ports:
       - 8080:80
     environment:
@@ -20,7 +19,6 @@ services:
       - mysql
 
   mysql:
-    image: mysql
     restart: always
     ports:
       - 3306:3306

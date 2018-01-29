@@ -17,11 +17,6 @@ web/app/uploads/*
 web/wp
 web/.htaccess
 
-# Dotenv
-.env
-.env.*
-!.env.example
-
 # Composer
 vendor/*
 !vendor/.gitkeep

@@ -4,13 +4,13 @@
 
 #### Generate and setup deploy-keys for the GitHub
 ```bash
-ssh-keygen -t rsa -b 4096 -f ./terraform/deploy-key -N ""
+ssh-keygen -t rsa -b 4096 -f ./terraform/deploy-key -C "wpadmin@stena.com" -N ""
 ```
 Add the content from deploy-key.pub to the repositories deploy-keys
 
 #### Generate and setup ssh-keys for ec2
 ```bash
-ssh-keygen -t rsa -b 4096 -f ~/.ssh/EXAMPLE -N ""
+ssh-keygen -t rsa -b 4096 -f ~/.ssh/EXAMPLE -C "wpadmin@stena.com" -N ""
 ```
 Add the content of EXAMPLE to lastpass
 

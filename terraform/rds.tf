@@ -8,7 +8,7 @@ resource "aws_db_instance" "mysql" {
 	instance_class = "${var.rds_instance_type}"
 	name = "wordpress"
 	username = "root"
-	password = "password"
+	password = "${var.rds_password}"
 	vpc_security_group_ids = ["${aws_security_group.wordpress.id}"]
 	skip_final_snapshot = true
 }

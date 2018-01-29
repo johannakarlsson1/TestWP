@@ -1,15 +1,9 @@
-provider "aws" {
-	region = "eu-west-1"
-	shared_credentials_file = "~/.aws/credentials"
-	profile = "stena"
-}
-
 variable "name" {
-	default = "wordpress-base"
+	default = "wordpress-EXAMPLE"
 }
 
 variable "github_repo" {
-	default = "StenaIT/wordpress-base"
+	default = "StenaIT/wordpress-EXAMPLE"
 }
 
 variable "ec2_instance_type" {
@@ -21,9 +15,16 @@ variable "rds_instance_type" {
 }
 
 variable "private_key" {
-	default = "~/.ssh/wordpress"
+	default = "~/.ssh/EXAMPLE"
 }
 
 variable "public_key" {
-	default = "~/.ssh/wordpress.pub"
+	default = "~/.ssh/EXAMPLE.pub"
 }
+
+variable "secrets_bucket" {
+	default = "stenait-wordpress-EXAMPLE-secrets"
+}
+
+# export TF_VAR_rds_password="xxxx"
+variable "rds_password" {}
