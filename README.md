@@ -9,7 +9,7 @@ ssh-keygen -t rsa -b 4096 -f ~/.ssh/EXAMPLE -C "wpadmin@stena.com" -N ""
 Add the content of EXAMPLE to lastpass (to store for other team members)
 
 #### GitHub add deploy key
-Add the newly generated public key to your GitHub repos deplot keys.
+Add the newly generated public key to your GitHub repos deploy keys.
 
 #### Setup aws profile
 ```bash
