@@ -2,7 +2,7 @@ data "template_file" "iam" {
 	template = "${file("templates/aws_iam_policy.tpl")}"
 
 	vars {
-		secrets_bucket = "${var.secrets_bucket}"
+		s3_bucket = "${aws_s3_bucket.terraform-remote-state-storage.bucket}"
 	}
 }
 

@@ -7,8 +7,8 @@
 			"s3:List*"
 		],
 		"Resource": [
-			"arn:aws:s3:::${secrets_bucket}/*",
-			"arn:aws:s3:::${secrets_bucket}"
+			"arn:aws:s3:::${s3_bucket}/*",
+			"arn:aws:s3:::${s3_bucket}"
 		]
 	}, {
 		"Effect": "Allow",

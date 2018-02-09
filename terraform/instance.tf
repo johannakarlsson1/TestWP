@@ -6,7 +6,7 @@ data "template_file" "bootstrap" {
 		name = "${var.name}"
 		mysql_address = "${aws_db_instance.mysql.address}"
 		github_repo = "${var.github_repo}"
-		secrets_bucket = "${var.secrets_bucket}"
+		s3_bucket = "${aws_s3_bucket.terraform-remote-state-storage.bucket}"
 		rds_password = "${var.rds_password}"
 	}
 }
