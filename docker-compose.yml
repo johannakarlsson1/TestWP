@@ -12,14 +12,14 @@ services:
       DB_PREFIX: wp_
       WP_ENV: development
       WP_HOME: http://localhost:8080
-      WP_SITEURL: http://localhost:8080/wp
+      WP_SITEURL: http://localhost:8080
     volumes:
       - ./:/var/www/html
     links:
       - mysql
 
   mysql:
-    restart: always
+    image: mysql
     ports:
       - 3306:3306
     volumes:
